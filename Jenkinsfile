@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh "make init"
                 sh "make plan"
+                sh "ls -a"
             }
         }
         stage ('release') {
